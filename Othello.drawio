@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-05-30T03:17:34.513Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="PWRXyty2Cin5H-LzriC0" version="24.4.10" type="google">
+  <diagram name="Page-1" id="HYiFye2XigchwcorriUi">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-5" value="Chip" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="180" width="220" height="188" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-6" value="- black: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fzrBQ5EvFd-DKT1uJzCF-5">
+          <mxGeometry y="26" width="220" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="fzrBQ5EvFd-DKT1uJzCF-5">
+          <mxGeometry y="70" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-8" value="&lt;div&gt;+ Chip(boolean)&lt;/div&gt;&lt;div&gt;+ getBlack(): boolean&lt;/div&gt;&lt;div&gt;+ setBlack(boolean): void&lt;/div&gt;&lt;div&gt;+ equals(Object): boolean&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fzrBQ5EvFd-DKT1uJzCF-5">
+          <mxGeometry y="78" width="220" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-9" value="Board" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="180" width="460" height="670" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-10" value="- board: Chip[][]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fzrBQ5EvFd-DKT1uJzCF-9">
+          <mxGeometry y="26" width="460" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="fzrBQ5EvFd-DKT1uJzCF-9">
+          <mxGeometry y="80" width="460" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="fzrBQ5EvFd-DKT1uJzCF-12" value="&lt;div&gt;+ Board()&lt;/div&gt;&lt;div&gt;+ getBoard(): Chip[][]&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ place(int, int, boolean): void&lt;/div&gt;&lt;div&gt;+ possibleMoves(boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- possibleMovesDown(boolean, int, int): String&lt;/div&gt;&lt;div&gt;- possibleMovesUp(boolean, int, int): String&lt;br&gt;&lt;/div&gt;&lt;div&gt;-&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;possibleMovesLeft(boolean, int, int): String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- possibleMovesRight(boolean, int, int): String&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- possibleMovesUpRight(boolean, int, int): String&lt;br&gt;&lt;/div&gt;&lt;div&gt;- possibleMovesUpLeft(boolean, int, int): String&lt;/div&gt;&lt;div&gt;- possibleMovesDownRight(boolean, int, int): String&lt;/div&gt;&lt;div&gt;- possibleMovesDownLeft(boolean, int, int): String&lt;/div&gt;&lt;div&gt;+ isBoardFull(): boolean&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;+ getUserColumn(String): int&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;+ getUserRow(String): int&lt;/u&gt;&lt;/div&gt;&lt;div&gt;+ convertToUserInput(String): String&lt;/div&gt;&lt;div&gt;+ displayPossibleMoves(boolean): void&lt;/div&gt;&lt;div&gt;+ possibleMovesAi(): String&lt;/div&gt;&lt;div&gt;+ switchTeam(int, int, boolean): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;- switchTeamDown(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamUp(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamLeft(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamRight(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamDownRight(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamDownLeft(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamUpRight(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;- switchTeamUpLeft(int, int, boolean): ArrayList&amp;lt;String&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ convertArrayList(ArrayList&amp;lt;String&amp;gt;, boolean): void&lt;/div&gt;&lt;div&gt;&lt;u&gt;+ wait(int): void&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;+ isValidInput(String, ArrayList&amp;lt;String&amp;gt;): boolean&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;+ playerTurn(boolean, Board, Scanner): void&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;+ conclusion(Chip[][]): void&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;- runOnePlayer(Scanner): void&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;- runTwoPlayer(Scanner): void&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ switchChips(Board): String&amp;nbsp;&lt;/div&gt;+ toString(): String&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="fzrBQ5EvFd-DKT1uJzCF-9">
+          <mxGeometry y="88" width="460" height="582" as="geometry" />
+        </mxCell>
+        <mxCell id="7dyKLxU_A7GPqtNI-Q6J-2" value="OthelloFileReader" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215" y="440" width="250" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="7dyKLxU_A7GPqtNI-Q6J-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7dyKLxU_A7GPqtNI-Q6J-2">
+          <mxGeometry y="26" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="7dyKLxU_A7GPqtNI-Q6J-5" value="&lt;u&gt;+ readMoves(String): ArrayList&amp;lt;String&amp;gt;&lt;/u&gt;&lt;div&gt;&lt;u&gt;- run(String): void&lt;/u&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="7dyKLxU_A7GPqtNI-Q6J-2">
+          <mxGeometry y="34" width="250" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
